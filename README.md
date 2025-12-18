@@ -1,151 +1,292 @@
-# [The Academic CV That Gets You Hired](https://github.com/HugoBlox/theme-academic-cv)
+[bep]: https://github.com/bep
+[bugs]: https://github.com/gohugoio/hugo/issues?q=is%3Aopen+is%3Aissue+label%3ABug
+[contributing]: CONTRIBUTING.md
+[create a proposal]: https://github.com/gohugoio/hugo/issues/new?labels=Proposal%2C+NeedsTriage&template=feature_request.md
+[documentation repository]: https://github.com/gohugoio/hugoDocs
+[documentation]: https://gohugo.io/documentation
+[dragonfly bsd, freebsd, netbsd, and openbsd]: https://gohugo.io/installation/bsd
+[forum]: https://discourse.gohugo.io
+[friends]: https://github.com/gohugoio/hugo/graphs/contributors
+[go]: https://go.dev/
+[hugo modules]: https://gohugo.io/hugo-modules/
+[installation]: https://gohugo.io/installation
+[issue queue]: https://github.com/gohugoio/hugo/issues
+[linux]: https://gohugo.io/installation/linux
+[macos]: https://gohugo.io/installation/macos
+[prebuilt binary]: https://github.com/gohugoio/hugo/releases/latest
+[requesting help]: https://discourse.gohugo.io/t/requesting-help/9132
+[spf13]: https://github.com/spf13
+[static site generator]: https://en.wikipedia.org/wiki/Static_site_generator
+[support]: https://discourse.gohugo.io
+[themes]: https://themes.gohugo.io/
+[twitter]: https://twitter.com/gohugoio
+[website]: https://gohugo.io
+[windows]: https://gohugo.io/installation/windows
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv/start/?utm_source=github&utm_medium=readme)
+<a href="https://gohugo.io/"><img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/static/images/hugo-logo-wide.svg?sanitize=true" alt="Hugo" width="565"></a>
 
-<h1 align="center">The Portfolio That Works While You Sleep</h1>
-
-<p align="center">
-  <strong>Your unfair advantage in academia.</strong><br/>
-  Stop sending PDFs into the void. Build a living portfolio that boosts citations and lands offers.<br/>
-  Trusted by 250,000+ researchers at <strong>MIT, Stanford, and Google</strong>.
-</p>
-
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme"><b>🚀 Launch Free (60s)</b></a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/templates/?open=academic-cv&loading=true&utm_source=github&utm_medium=readme">Live Demo</a>
-  &nbsp;•&nbsp;
-  <a href="https://marketplace.visualstudio.com/items?itemName=hugoblox.hugoblox-studio"><b>Visual Editor</b></a>
-</p>
-
-<p align="center">
-  <a href="https://discord.gg/z8wNYzb"><img src="https://img.shields.io/discord/722225264733716590?label=Join%20Discord&style=social" alt="Discord"></a>
-  <a href="https://github.com/HugoBlox/theme-academic-cv"><img src="https://img.shields.io/github/stars/HugoBlox/theme-academic-cv?label=Star%20Academic%20CV&style=social" alt="GitHub Stars"></a>
-</p>
-
----
-
-## Why This Template?
-
-Most CVs are static PDFs that get lost in the pile. This is an **intelligent portfolio** that works 24/7 to advance your career.
-
-- **🔮 Future-Proof:** Your content lives in simple **Markdown**. No database to break, no lock-in.
-- **🤖 AI-Ready:** Optimized for search engines and LLMs, so your work is found and cited.
-- **⚡ Zero Maintenance:** Auto-import citations from BibTeX and focus on research.
-- **✍️ Edit Visually:** Use **HugoBlox Studio** in VS Code — no coding needed. Full capabilities in Pro.
-
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme">
-    <img src="https://img.shields.io/badge/⚡️%20Get%20Your%20CV%20in%2060s-ff4655?style=for-the-badge" 
-    alt="Deploy this template" width="400">
-  </a>
-</p>
-
-![HugoBlox Studio in Action](https://raw.githubusercontent.com/HugoBlox/hugo-blox-builder/main/.github/media/studio/slide-1.webp)
-*HugoBlox Studio: Drag-and-drop page builder inside VS Code.*
-
-> "My citations went up 3x after switching to this template. The citation auto-sync feature is a lifesaver."
-> — **Dr. Zhang**, AI Research Scientist, Meta
+A fast and flexible static site generator built with love by [bep], [spf13], and [friends] in [Go].
 
 ---
 
-## Who This Is For
+[![GoDoc](https://godoc.org/github.com/gohugoio/hugo?status.svg)](https://godoc.org/github.com/gohugoio/hugo)
+[![Tests on Linux, MacOS and Windows](https://github.com/gohugoio/hugo/workflows/Test/badge.svg)](https://github.com/gohugoio/hugo/actions?query=workflow%3ATest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gohugoio/hugo)](https://goreportcard.com/report/github.com/gohugoio/hugo)
 
-- Students and grads applying to top labs and industry roles
-- Researchers who want a living, citable portfolio
-- Faculty/PIs showcasing publications, talks, and group news
+[Website] | [Installation] | [Documentation] | [Support] | [Contributing] | <a rel="me" href="https://fosstodon.org/@gohugoio">Mastodon</a>
 
----
+## Overview
 
-## Features
+Hugo is a [static site generator] written in [Go], optimized for speed and designed for flexibility. With its advanced templating system and fast asset pipelines, Hugo renders a complete site in seconds, often less.
 
-| Feature | Benefit |
-| :--- | :--- |
-| **Markdown, Jupyter, RStudio** | Write in the tools you already use. |
-| **Auto-Update Citations** | Drop in a BibTeX file; formatted lists generated automatically. |
-| **Visual Editor** | Drag-and-drop blocks to build pages in minutes. |
-| **Global CDN** | Blazing fast load times (100/100 Lighthouse scores). |
-| **Privacy First** | You own your data. Host for free on GitHub Pages. |
+Due to its flexible framework, multilingual support, and powerful taxonomy system, Hugo is widely used to create:
 
----
+- Corporate, government, nonprofit, education, news, event, and project sites
+- Documentation sites
+- Image portfolios
+- Landing pages
+- Business, professional, and personal blogs
+- Resumes and CVs
 
-## Notebook → Posts and Slides
+Use Hugo's embedded web server during development to instantly see changes to content, structure, behavior, and presentation. Then deploy the site to your host, or push changes to your Git provider for automated builds and deployment.
 
-- Publish your actual `.ipynb` as beautiful long-form posts — code, outputs, and narrative kept intact.
-- Slides in Markdown with Reveal.js: math, syntax highlight, diagrams, speaker notes.
-- Coming soon: **Notebook → Slides (beta)**. Request early access in Discord.
+Hugo's fast asset pipelines include:
 
-Learn more: docs on [Notebooks](https://docs.hugoblox.com/reference/markdown/#-notebooks) and [Slides](https://docs.hugoblox.com/guides/slides/).
+- CSS bundling &ndash; transpilation (Sass), tree shaking, minification, source maps, SRI hashing, and PostCSS integration
+- JavaScript bundling &ndash; transpilation (TypeScript, JSX), tree shaking, minification, source maps, and SRI hashing
+- Image processing &ndash; convert, resize, crop, rotate,  adjust colors, apply filters, overlay text and images, and extract EXIF data
 
----
+And with [Hugo Modules], you can share content, assets, data, translations, themes, templates, and configuration with other projects via public or private Git repositories.
 
-## Why Go Pro (from $8/m)
+## Sponsors
 
-- Enhanced HugoBlox Studio visual editor — save 10–20 hours setting up and polishing
-- Premium CV & Resumé designs — make an unforgettable first impression
-- Pro blocks, remove attribution, and priority support
+<p>&nbsp;</p>
+<p float="left">
+  <a href="https://www.linode.com/?utm_campaign=hugosponsor&utm_medium=banner&utm_source=hugogithub" target="_blank"><img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/assets/images/sponsors/linode-logo_standard_light_medium.png" width="200" alt="Linode"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://cloudcannon.com/hugo-cms/?utm_campaign=HugoSponsorship&utm_source=sponsor&utm_content=gohugo" target="_blank"><img src="https://raw.githubusercontent.com/gohugoio/gohugoioTheme/master/assets/images/sponsors/cloudcannon-blue.svg" width="220" alt="CloudCannon"></a>
+<p>&nbsp;</p>
 
----
+## Installation
 
-## Free vs Pro
+Install Hugo from a [prebuilt binary], package manager, or package repository. Please see the installation instructions for your operating system:
 
-| Feature | Academic CV (Free) | Academic CV Pro & Resumé Pro |
-| --- | --- | --- |
-| Design | Professional & clean | Premium designs |
-| Layouts | Standard sections | Advanced timelines & layouts |
-| Courses/Lectures | Basic | Fully-Featured |
-| First Impression | Strong | Unforgettable |
-| Discord Support | Community | Priority |
+- [macOS]
+- [Linux]
+- [Windows]
+- [DragonFly BSD, FreeBSD, NetBSD, and OpenBSD]
 
-<p align="center">
-  <a href="https://hugoblox.com/pro?utm_source=github&utm_medium=readme"><b>💎 Upgrade to Pro</b></a><br/>
-  <a href="https://hugoblox.com/templates/academic-cv-pro/start?utm_source=github&utm_medium=readme">✨ Deploy Academic CV Pro</a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/templates/resume-pro/start?utm_source=github&utm_medium=readme">📄 Deploy Resumé Pro</a>
-</p>
+## Build from source
 
----
+Hugo is available in two editions: standard and extended. With the extended edition you can:
 
-## Get Started
+- Encode to the WebP format when processing images. You can decode WebP images with either edition.
+- Transpile Sass to CSS using the embedded LibSass transpiler. The extended edition is not required to use the Dart Sass transpiler.
 
-### Option 1: No-Code (Fastest)
-Launch a fully hosted site in your browser. No software to install.
+Prerequisites to build Hugo from source:
 
-👉 [**Launch in Browser (Free)**](https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme)
+- Standard edition: Go 1.19 or later
+- Extended edition: Go 1.19 or later, and GCC
 
-### Option 2: Studio (Visual Editor)
-1) Install [HugoBlox Studio](https://marketplace.visualstudio.com/items?itemName=hugoblox.hugoblox-studio) for VS Code  
-2) Open this project and edit visually
+Build the standard edition:
 
-### Option 3: CLI (Developers)
-1) Install [Hugo](https://docs.hugoblox.com/start/cli/)
-2) Create your site with the CLI:
-
-```bash
-npx hugoblox create site --template academic-cv
+```text
+go install github.com/gohugoio/hugo@latest
 ```
 
----
+Build the extended edition:
 
-## FAQ
+```text
+CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@latest
+```
 
-- Do I need to know Hugo? No — you can edit visually or write Markdown.
-- Can I host for free? Yes — GitHub Pages/Netlify are supported.
-- Can I export/migrate later? Yes — your site is just files.
-- Can I cancel Pro anytime? Yes.
+## Documentation
 
----
+Hugo's [documentation] includes installation instructions, a quick start guide, conceptual explanations, reference information, and examples.
 
-## Community & Support
+Please submit documentation issues and pull requests to the [documentation repository].
 
-- 💬 [**Discord Community**](https://discord.gg/z8wNYzb)
-- 📚 [**Documentation**](https://docs.hugoblox.com/?utm_source=github&utm_medium=readme)
-- 🐦 [**Follow on X**](https://x.com/BuildLore)
-- ⭐ [**Star on GitHub**](https://github.com/HugoBlox/hugo-blox-builder)
+## Support
 
----
+Please **do not use the issue queue** for questions or troubleshooting. Unless you are certain that your issue is a software defect, use the [forum].
 
-MIT © 2016-Present [George Cushen](https://georgecushen.com)
+Hugo’s [forum] is an active community of users and developers who answer questions, share knowledge, and provide examples. A quick search of over 20,000 topics will often answer your question. Please be sure to read about [requesting help] before asking your first question.
 
-<!--START_SECTION:news-->
-<!--END_SECTION:news-->
+## Contributing
+
+You can contribute to the Hugo project by:
+
+- Answering questions on the [forum]
+- Improving the [documentation]
+- Monitoring the [issue queue]
+- Creating or improving [themes]
+- Squashing [bugs]
+
+Please submit documentation issues and pull requests to the [documentation repository].
+
+If you have an idea for an enhancement or new feature, create a new topic on the [forum] in the "Feature" category. This will help you to:
+
+- Determine if the capability already exists
+- Measure interest
+- Refine the concept
+
+If there is sufficient interest, [create a proposal]. Do not submit a pull request until the project lead accepts the proposal.
+
+For a complete guide to contributing to Hugo, see the [Contribution Guide](CONTRIBUTING.md).
+
+## Dependencies
+
+Hugo stands on the shoulders of great open source libraries. Run `hugo env --logLevel info` to display a list of dependencies.
+
+<details>
+<summary>See current dependencies</summary>
+
+```text
+cloud.google.com/go/compute/metadata="v0.2.3"
+cloud.google.com/go/iam="v1.1.3"
+cloud.google.com/go/storage="v1.31.0"
+cloud.google.com/go="v0.110.8"
+github.com/Azure/azure-sdk-for-go/sdk/azcore="v1.7.0"
+github.com/Azure/azure-sdk-for-go/sdk/azidentity="v1.3.0"
+github.com/Azure/azure-sdk-for-go/sdk/internal="v1.3.0"
+github.com/Azure/azure-sdk-for-go/sdk/storage/azblob="v1.1.0"
+github.com/Azure/go-autorest/autorest/to="v0.4.0"
+github.com/AzureAD/microsoft-authentication-library-for-go="v1.0.0"
+github.com/BurntSushi/locker="v0.0.0-20171006230638-a6e239ea1c69"
+github.com/PuerkitoBio/purell="v1.1.1"
+github.com/PuerkitoBio/urlesc="v0.0.0-20170810143723-de5bf2ad4578"
+github.com/alecthomas/chroma/v2="v2.11.1"
+github.com/armon/go-radix="v1.0.0"
+github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream="v1.4.11"
+github.com/aws/aws-sdk-go-v2/config="v1.18.32"
+github.com/aws/aws-sdk-go-v2/credentials="v1.13.31"
+github.com/aws/aws-sdk-go-v2/feature/ec2/imds="v1.13.7"
+github.com/aws/aws-sdk-go-v2/feature/s3/manager="v1.11.76"
+github.com/aws/aws-sdk-go-v2/internal/configsources="v1.1.37"
+github.com/aws/aws-sdk-go-v2/internal/endpoints/v2="v2.4.31"
+github.com/aws/aws-sdk-go-v2/internal/ini="v1.3.38"
+github.com/aws/aws-sdk-go-v2/internal/v4a="v1.1.0"
+github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding="v1.9.12"
+github.com/aws/aws-sdk-go-v2/service/internal/checksum="v1.1.32"
+github.com/aws/aws-sdk-go-v2/service/internal/presigned-url="v1.9.31"
+github.com/aws/aws-sdk-go-v2/service/internal/s3shared="v1.15.0"
+github.com/aws/aws-sdk-go-v2/service/s3="v1.38.1"
+github.com/aws/aws-sdk-go-v2/service/sso="v1.13.1"
+github.com/aws/aws-sdk-go-v2/service/ssooidc="v1.15.1"
+github.com/aws/aws-sdk-go-v2/service/sts="v1.21.1"
+github.com/aws/aws-sdk-go-v2="v1.20.0"
+github.com/aws/aws-sdk-go="v1.48.2"
+github.com/aws/smithy-go="v1.14.0"
+github.com/bep/clocks="v0.5.0"
+github.com/bep/debounce="v1.2.0"
+github.com/bep/gitmap="v1.1.2"
+github.com/bep/goat="v0.5.0"
+github.com/bep/godartsass/v2="v2.0.0"
+github.com/bep/godartsass="v1.2.0"
+github.com/bep/golibsass="v1.1.1"
+github.com/bep/gowebp="v0.3.0"
+github.com/bep/lazycache="v0.2.0"
+github.com/bep/logg="v0.3.0"
+github.com/bep/mclib="v1.20400.20402"
+github.com/bep/overlayfs="v0.6.0"
+github.com/bep/simplecobra="v0.3.2"
+github.com/bep/tmc="v0.5.1"
+github.com/clbanning/mxj/v2="v2.7.0"
+github.com/cli/safeexec="v1.0.1"
+github.com/cpuguy83/go-md2man/v2="v2.0.2"
+github.com/disintegration/gift="v1.2.1"
+github.com/dlclark/regexp2="v1.10.0"
+github.com/dustin/go-humanize="v1.0.1"
+github.com/evanw/esbuild="v0.19.7"
+github.com/fatih/color="v1.16.0"
+github.com/frankban/quicktest="v1.14.6"
+github.com/fsnotify/fsnotify="v1.7.0"
+github.com/getkin/kin-openapi="v0.120.0"
+github.com/ghodss/yaml="v1.0.0"
+github.com/go-openapi/jsonpointer="v0.19.6"
+github.com/go-openapi/swag="v0.22.4"
+github.com/gobuffalo/flect="v1.0.2"
+github.com/gobwas/glob="v0.2.3"
+github.com/gohugoio/go-i18n/v2="v2.1.3-0.20230805085216-e63c13218d0e"
+github.com/gohugoio/locales="v0.14.0"
+github.com/gohugoio/localescompressed="v1.0.1"
+github.com/golang-jwt/jwt/v4="v4.5.0"
+github.com/golang/groupcache="v0.0.0-20210331224755-41bb18bfe9da"
+github.com/golang/protobuf="v1.5.3"
+github.com/google/go-cmp="v0.6.0"
+github.com/google/s2a-go="v0.1.7"
+github.com/google/uuid="v1.4.0"
+github.com/google/wire="v0.5.0"
+github.com/googleapis/enterprise-certificate-proxy="v0.3.2"
+github.com/googleapis/gax-go/v2="v2.12.0"
+github.com/gorilla/websocket="v1.5.1"
+github.com/hairyhenderson/go-codeowners="v0.4.0"
+github.com/hashicorp/golang-lru/v2="v2.0.1"
+github.com/invopop/yaml="v0.2.0"
+github.com/jdkato/prose="v1.2.1"
+github.com/jmespath/go-jmespath="v0.4.0"
+github.com/josharian/intern="v1.0.0"
+github.com/kr/pretty="v0.3.1"
+github.com/kr/text="v0.2.0"
+github.com/kylelemons/godebug="v1.1.0"
+github.com/kyokomi/emoji/v2="v2.2.12"
+github.com/mailru/easyjson="v0.7.7"
+github.com/marekm4/color-extractor="v1.2.1"
+github.com/mattn/go-colorable="v0.1.13"
+github.com/mattn/go-isatty="v0.0.20"
+github.com/mattn/go-runewidth="v0.0.9"
+github.com/mitchellh/hashstructure="v1.1.0"
+github.com/mitchellh/mapstructure="v1.5.0"
+github.com/mohae/deepcopy="v0.0.0-20170929034955-c48cc78d4826"
+github.com/muesli/smartcrop="v0.3.0"
+github.com/niklasfasching/go-org="v1.7.0"
+github.com/olekukonko/tablewriter="v0.0.5"
+github.com/pelletier/go-toml/v2="v2.1.0"
+github.com/perimeterx/marshmallow="v1.1.5"
+github.com/pkg/browser="v0.0.0-20210911075715-681adbf594b8"
+github.com/pkg/errors="v0.9.1"
+github.com/rogpeppe/go-internal="v1.11.0"
+github.com/russross/blackfriday/v2="v2.1.0"
+github.com/rwcarlsen/goexif="v0.0.0-20190401172101-9e8deecbddbd"
+github.com/sanity-io/litter="v1.5.5"
+github.com/sass/dart-sass/compiler="1.63.2"
+github.com/sass/dart-sass/implementation="1.63.2"
+github.com/sass/dart-sass/protocol="2.0.0"
+github.com/sass/libsass="3.6.5"
+github.com/spf13/afero="v1.10.0"
+github.com/spf13/cast="v1.5.1"
+github.com/spf13/cobra="v1.7.0"
+github.com/spf13/fsync="v0.9.0"
+github.com/spf13/pflag="v1.0.5"
+github.com/tdewolff/minify/v2="v2.20.7"
+github.com/tdewolff/parse/v2="v2.7.5"
+github.com/webmproject/libwebp="v1.3.2"
+github.com/yuin/goldmark-emoji="v1.0.2"
+github.com/yuin/goldmark="v1.6.0"
+go.opencensus.io="v0.24.0"
+go.uber.org/atomic="v1.11.0"
+go.uber.org/automaxprocs="v1.5.3"
+gocloud.dev="v0.34.0"
+golang.org/x/crypto="v0.15.0"
+golang.org/x/exp="v0.0.0-20221031165847-c99f073a8326"
+golang.org/x/image="v0.13.0"
+golang.org/x/mod="v0.14.0"
+golang.org/x/net="v0.18.0"
+golang.org/x/oauth2="v0.13.0"
+golang.org/x/sync="v0.5.0"
+golang.org/x/sys="v0.14.0"
+golang.org/x/text="v0.14.0"
+golang.org/x/time="v0.3.0"
+golang.org/x/tools="v0.15.0"
+golang.org/x/xerrors="v0.0.0-20220907171357-04be3eba64a2"
+google.golang.org/api="v0.151.0"
+google.golang.org/genproto/googleapis/api="v0.0.0-20231016165738-49dd2c1f3d0b"
+google.golang.org/genproto/googleapis/rpc="v0.0.0-20231030173426-d783a09b4405"
+google.golang.org/genproto="v0.0.0-20231016165738-49dd2c1f3d0b"
+google.golang.org/grpc="v1.59.0"
+google.golang.org/protobuf="v1.31.0"
+gopkg.in/yaml.v2="v2.4.0"
+gopkg.in/yaml.v3="v3.0.1"
+howett.net/plist="v1.0.0"
+software.sslmate.com/src/go-pkcs12="v0.2.0"
+```
+</details>
